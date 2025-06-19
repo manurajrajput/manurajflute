@@ -15,50 +15,42 @@
 	<body>
 
 		<div class="wrapper">
-			<div class="inner">
-				<form action="post.php" method="post">
-					<h3>Register</h3>
-					<p>For one to one classes from Manuraj Singh </p>
-					<label class="form-group">
-						<input type="text" class="form-control" name="name"  required>
-						<span>Full Name</span>
-						<span class="border"></span>
-					</label>
-					<label class="form-group">
-						<input type="email" class="form-control" name="email"  required>
-						<span for="">E-mail</span>
-						<span class="border"></span>
-					</label>
-					<label class="form-group" >
-						<input type="tel" class="form-control" id="mobile" name="phone" required>
-						<span for="">Phone Number</span>
-						<span class="border"></span>
-					</label>
-					<label class="form-group">
-						<input type="text" class="form-control" name="name"  required>
-						<span>City</span>
-						<span class="border"></span>
-					</label>
-					<label class="form-group" >
-						<input type="tel" class="form-control" id="mobile" name="phone" required>
-						<span for="">State</span>
-						<span class="border"></span>
-					</label>
-					<label class="form-group">
-						<input type="text" class="form-control" name="name"  required>
-						<span>Country</span>
-						<span class="border"></span>
-					</label>
-					<input type="checkbox" value="terms" required>
-					<label > I have read all <a href="terms.html" style="color: aliceblue;" target="_blank">Instructions</a></label><br>
-					<button type="submit" name="submit">Submit 
-						<i class="zmdi zmdi-arrow-right"></i>
-					</button>
-				</form>
-				<br>
-				<p>For free classes visit <a href="https://www.youtube.com/channel/UCjZccXiw146QFbkmhj_SP6Q" target="_blank" style="color: azure;"><u>YouTube</u></a> channel of Manuraj Singh </p>
-							</div>
-		</div>
+	<div class="inner">
+		<h3>Register</h3>
+		<p>For one to one classes from Manuraj Singh </p>
+
+		<input type="checkbox" id="termsCheckbox" value="terms" required>
+		<label for="termsCheckbox">I have read all <a href="terms.html" style="color: aliceblue;" target="_blank">Instructions</a></label><br>
+<br>
+		<center>
+		<a href="https://forms.gle/2KLPJjRZh1QmwCXV8" class="styled-button" target="_blank">
+			Register Now <i class="zmdi zmdi-arrow-right"></i>
+			
+		</a>
+				</center>
+		<br>
+
+		<p>For free classes visit <a href="https://www.youtube.com/channel/UCjZccXiw146QFbkmhj_SP6Q" target="_blank" style="color: azure;"><u>YouTube</u></a> channel of Manuraj Singh </p>
+	</div>
+</div>
+
+<style>
+	.styled-button {
+		display: inline-block;
+		background-color: #007bff;
+		color: white;
+		padding: 10px 20px;
+		text-align: center;
+		text-decoration: none;
+		border-radius: 5px;
+		font-weight: bold;
+		transition: background-color 0.3s ease;
+	}
+	.styled-button:hover {
+		background-color: #0056b3;
+	}
+</style>
+
 		
 	</body>
 </html>
