@@ -1,56 +1,113 @@
+```html
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title>Flute Classes Registeration </title>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <meta charset="utf-8">
+    <title>Flute Classes Registration</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<!-- MATERIAL DESIGN ICONIC FONT -->
-		<link rel="stylesheet" href="fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
-		
-		<!-- STYLE CSS -->
-		<link rel="stylesheet" href="css/style.css">
-	</head>
+    <!-- MATERIAL DESIGN ICONIC FONT -->
+    <link rel="stylesheet" href="fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
 
-	<body>
+    <!-- STYLE CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
 
-		<div class="wrapper">
-	<div class="inner">
-		<h3>Register</h3>
-		<p>For one to one classes from Manuraj Singh </p>
+<body>
 
-		<input type="checkbox" id="termsCheckbox" value="terms" required>
-		<label for="termsCheckbox">I have read all <a href="terms.html" style="color: aliceblue;" target="_blank">Instructions</a></label><br>
-<br>
-		<center>
-		<a href="https://forms.gle/2KLPJjRZh1QmwCXV8" class="styled-button" target="_blank">
-			Register Now <i class="zmdi zmdi-arrow-right"></i>
-			
-		</a>
-				</center>
-		<br>
+    <div class="wrapper">
+        <div class="inner">
 
-		<p>For free classes visit <a href="https://www.youtube.com/channel/UCjZccXiw146QFbkmhj_SP6Q" target="_blank" style="color: azure;"><u>YouTube</u></a> channel of Manuraj Singh </p>
-	</div>
-</div>
+            <h3>Register</h3>
 
-<style>
-	.styled-button {
-		display: inline-block;
-		background-color: #007bff;
-		color: white;
-		padding: 10px 20px;
-		text-align: center;
-		text-decoration: none;
-		border-radius: 5px;
-		font-weight: bold;
-		transition: background-color 0.3s ease;
-	}
-	.styled-button:hover {
-		background-color: #0056b3;
-	}
-</style>
+            <p>For one to one classes from Manuraj Singh</p>
 
-		
-	</body>
+            <!-- Mandatory Checkbox -->
+            <div class="terms-section">
+                <input type="checkbox" id="termsCheckbox" name="termsCheckbox">
+
+                <label for="termsCheckbox">
+                    I have read all
+                    <a href="terms.html"
+                       style="color: aliceblue;"
+                       target="_blank">
+                        Instructions
+                    </a>
+                </label>
+            </div>
+
+            <br>
+
+            <!-- Register Button -->
+            <center>
+                <a href="https://forms.gle/2KLPJjRZh1QmwCXV8"
+                   class="styled-button"
+                   id="registerButton"
+                   target="_blank">
+                    Register Now
+                    <i class="zmdi zmdi-arrow-right"></i>
+                </a>
+            </center>
+
+            <br>
+
+            <p>
+                For free classes visit
+                <a href="https://www.youtube.com/channel/UCjZccXiw146QFbkmhj_SP6Q"
+                   target="_blank"
+                   style="color: azure;">
+                    <u>YouTube</u>
+                </a>
+                channel of Manuraj Singh
+            </p>
+
+        </div>
+    </div>
+
+    <style>
+        .styled-button {
+            display: inline-block;
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+            cursor: pointer;
+        }
+
+        .styled-button:hover {
+            background-color: #0056b3;
+        }
+
+        .terms-section {
+            margin-top: 10px;
+        }
+
+        .terms-section input[type="checkbox"] {
+            cursor: pointer;
+        }
+
+        .terms-section label {
+            cursor: pointer;
+        }
+    </style>
+
+    <script>
+        document.getElementById("registerButton").addEventListener("click", function(event) {
+
+            const checkbox = document.getElementById("termsCheckbox");
+
+            if (!checkbox.checked) {
+                event.preventDefault();
+
+                alert("Please read the Instructions and check the box before registering.");
+            }
+        });
+    </script>
+
+</body>
 </html>
+```
